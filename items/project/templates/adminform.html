@@ -1,0 +1,20 @@
+<html>
+    <title>
+        Admine form
+    </title>
+    <head>
+        <body>
+            <h1>ADMINE FORM</h1>
+            <form method="post" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+              Image Upload: <input type="file" name="image">
+              product_name: <input type="text" name="pname">
+              product_price: <input type="integer" name="pprice">
+              product_descrition: <input type="text" name="pdesp">
+              <button type="submit" class="btn btn-danger">Submit</button>
+            </form>
+
+            
+        </body>
+    </head>
+</html>

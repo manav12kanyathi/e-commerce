@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cart Items</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        {% csrf_token%}
+        <label>Choose a size:</label>
+
+        <select name="size">
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">Xl</option>
+        </select>
+
+        <label>choose a color</label>
+        <select name="color">
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="white">white</option>
+            <option value="black">black</option>
+        </select>
+        <label>Quantity</label>
+        <input type="number" name="quantity">
+        <button type="submit"><a href="view_cart_details">add to cart</a></button>
+    </form>
+</body>
+
+</html>

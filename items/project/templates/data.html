@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 50%;
+            height: 200px;
+        }
+
+        tr {
+            border: 1px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>all details</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>sr.no.</th>
+                <th>fname</th>
+                <th>lname</th>
+                <th>age</th>
+                <th>phone</th>
+                <th>email</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in dat %}
+            <tr>
+                <td>{{i.id}} </td>
+                <td>{{i.fname}}</td>
+                <td>{{i.age}}</td>
+                <td>{{i.lname}} </td>
+                <td>{{i.phone}}</td>
+                <td>{{i.email}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>sr.no.</th>
+                <th>email</th>
+                <th>password</th>
+                <th>adress</th>
+                <th>district</th>
+                <th>estate</th>
+                <th>code</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for x in mat %}
+            <tr>
+                <td>{{x.id}}</td>
+                <td>{{x.email}}</td>
+                <td>{{x.password}}</td>
+                <td>{{x.adress}}</td>
+                <td>{{x.district}}</td>
+                <td>{{x.estate}}</td>
+                <td>{{x.code}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>sr.no.</th>
+                <th>email</th>
+                <th>password</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for v in zat %}
+            <tr>
+                <td>{{v.id}}</td>
+                <td>{{v.mail}}</td>
+                <td>{{v.password}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+
+</body>
+
+</html>
